@@ -27,14 +27,14 @@ public class BlockchainforIOT extends Exception{
         boolean run = true;
 
         try {
-            if (args[0].equalsIgnoreCase("--initialize")){
+            if (args[0].equalsIgnoreCase("--initialize") || args[0].equalsIgnoreCase("--i")){
                 System.out.printf("\n\nArguments below: \n");
                 System.out.println("--printDevicesAndData or --d : Prints all the chained IoT Devices and the information in it");
-                System.out.println("--printAllDeviceName --n : Prints name of each device in the chain");
+                System.out.println("--printAllDeviceName or --n : Prints name of each device in the chain");
                 System.out.println("--removeDevice or --r : Removes the devices the first occurance of device by name if it exist");
-                System.out.println("--addDevice --a : Adds a new devices at the end of chain with provided name and data");
-                System.out.println("--checkValid --v : Checks if the chain is valid by calculating and comparing hashes for each device");
-                System.out.println("--exit --e : Exits the Program");
+                System.out.println("--addDevice or --a : Adds a new devices at the end of chain with provided name and data");
+                System.out.println("--checkValid or --v : Checks if the chain is valid by calculating and comparing hashes for each device");
+                System.out.println("--exit or --e : Exits the Program");
                 System.out.printf("If the argument is not valid it displays Invalid Argument\n\n");
                 while (run){
                     Scanner scan = new Scanner(System.in);
@@ -80,25 +80,21 @@ public class BlockchainforIOT extends Exception{
                         System.out.printf("Invalid Argument\n\n");
                         System.out.println("Please include arguments:");
                         System.out.println("--printDevicesAndData or --d : Prints all the chained IoT Devices and the information in it");
-                        System.out.println("--printAllDeviceName --n : Prints name of each device in the chain");
+                        System.out.println("--printAllDeviceName or --n : Prints name of each device in the chain");
                         System.out.println("--removeDevice or --r : Removes the devices the first occurance of device by name if it exist");
-                        System.out.println("--addDevice --a : Adds a new devices at the end of chain with provided name and data");
-                        System.out.println("--checkValid --v : Checks if the chain is valid by calculating and comparing hashes for each device");
-                        System.out.println("--exit --e : Exits the Program");
+                        System.out.println("--addDevice or -a : Adds a new devices at the end of chain with provided name and data");
+                        System.out.println("--checkValid or --v : Checks if the chain is valid by calculating and comparing hashes for each device");
+                        System.out.println("--exit or --e : Exits the Program");
                         System.out.println();
                     }
 
                 }
             }
         }catch(Exception e){
-            System.out.printf("\n\nPlease include arguments:\n");
-            System.out.println("--printDevicesAndData or --d : Prints all the chained IoT Devices and the information in it");
-            System.out.println("--printAllDeviceName --n : Prints name of each device in the chain");
-            System.out.println("--removeDevice or --r : Removes the devices the first occurance of device by name if it exist");
-            System.out.println("--addDevice --a : Adds a new devices at the end of chain with provided name and data");
-            System.out.println("--checkValid --v : Checks if the chain is valid by calculating and comparing hashes for each device");
-            System.out.println("--exit --e : Exits the Program");
-            System.out.printf("If the argument is not valid it displays Invalid argument\n\n");
+            System.out.printf("\n\nPlease include argument '--initialize' or '--i' to run the program:\n");
+            System.out.printf("Use command java BlockchainforIOT --initialize\n");
+            System.out.printf("or\n");
+            System.out.printf("Use command java BlockchainforIOT --i\n");
         }
 
     }
