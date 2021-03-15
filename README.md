@@ -18,11 +18,11 @@ Once the program is running it asks the user to enter arguments.
 
 Arguments below: 
 
---printDevicesAndData or --d : Prints all the chained IoT Devices and the information in it.<br>
---printAllDeviceName --n : Prints name of each device in the chain.<br>
---removeDevice or --r : Removes the devices the first occurance of device by name if it exist.<br>
---addDevice --a : Adds a new devices at the end of chain with provided name and data.<br>
---checkValid --v : Checks if the chain is valid by calculating and comparing hashes for each device.<br>
---exit --e : Exits the Program.<br><br>
+'--printDevicesAndData' or '--d' : Prints all the chained IoT Devices and the information in it.<br>
+'--printAllDeviceName' or '--n' : Prints name of each device in the chain.<br>
+'--removeDevice' or '--r' : Removes the devices the first occurance of device by name if it exist.<br>
+'--addDevice' or '--a' : Adds a new devices at the end of chain with provided name and data.<br>
+'--checkValid' or '--v' : Checks if the chain is valid by calculating and comparing hashes for each device.<br>
+'--exit' or  '--e' : Exits the Program.<br><br>
 
 If the argument is not valid it displays Invalid Argument.
